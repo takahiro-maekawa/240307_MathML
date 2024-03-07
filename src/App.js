@@ -1,12 +1,12 @@
-import ConfigMathJaxContext  from './components/ConfigMathJaxContext';
 import SampleView  from './components/SampleView';
+import { MathJaxContext } from "better-react-mathjax";
 
 const App = () => {
   return (
-    <ConfigMathJaxContext>
-      <h1>数学的概念</h1>
+    <MathJaxContext>
+      <h1>以下が数式の一覧となります。</h1>
       <SampleView/>
-    </ConfigMathJaxContext>
+    </MathJaxContext>
   );
 };
 
